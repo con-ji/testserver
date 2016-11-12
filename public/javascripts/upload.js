@@ -22,18 +22,6 @@ $('#upload-input').on('change', function(){
     count ++
     }
 
-    var exec = require('child_process').exec;
-    var child = exec('java -jar <jar location> <file>',
-
-    function (error, stdout, stderr) {
-      console.log('Output -> ' + stdout);
-      if(error !== null) {
-        console.log("Error -> "+error);
-      }
-    });
-
-module.exports = child;
-
     $.ajax({
       url: '/upload',
       type: 'POST',
