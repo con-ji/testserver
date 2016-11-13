@@ -1,0 +1,5 @@
+1. Deserialize the JSON file and pass the image into the folder
+
+2. Image -> JAR -> JSON -> Server -> App where it came from
+
+3. Figure out how to return file to where it was requested
